@@ -61,7 +61,6 @@ def get_evy_url(session,sts):
         print "%s already exists"%x[len(x)-1][0:-5]
 
     r = session.get('https://developers.weixin.qq.com/minigame/dev/api/'+sts,headers = header,verify=False) # 实现验证码登陆
-    bsObj = BeautifulSoup(r.content, "html.parser")
     if r.status_code == 200:
         with open('page/%s'%(x[len(x)-1]), 'w') as fp:
             fp.write(r.content)
