@@ -8,3 +8,5 @@ for wx mini game
 
 ## wxProcess.py
   a tool to analyse html file 
+
+#[中文说明](https://www.jianshu.com/p/8d9c532a3b72)
